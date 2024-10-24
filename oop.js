@@ -102,11 +102,21 @@ class AdaStudent extends Person {
 	}
 }
 
+class Cohort {
+	_cohortCode;
+
+	constructor(cohortCode) {
+		this._cohortCode = cohortCode;
+		this.cohort = [];
+	}
+}
+
 // Testing code
 
 //const aqil = new Person("Aqil Hussain", "01/01/2000", "Manchester");
 //const steve = new AdaStaff("Steve Rich", "01/01/1998", "Lincoln", "Lecturer", "Manchester");
-const zain = new AdaStudent("Zain Ahmed", "11/10/2005", "London", "Just Eat", "Software Engineering", "2024");
+//const zain = new AdaStudent("Zain Ahmed", "11/10/2005", "London", "Just Eat", "Software Engineering", "2024");
+const april24 = new Cohort("24-04-LDN-MCR");
 
 // console.log(steve);
 // console.log(aqil);
@@ -115,4 +125,5 @@ const zain = new AdaStudent("Zain Ahmed", "11/10/2005", "London", "Just Eat", "S
 // console.log(steve.name);
 // steve.name = "Stevano Rich";
 // console.log(steve.name);
-console.log(zain.talk());
+//console.log(zain.talk());
+console.log(april24);
